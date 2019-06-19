@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Nanum+Gothic|Scheherazade');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+/*4.container-fluid가ㅏ 가지고 있는 기본 padding을 0으로 설정한다.*/
+.han, .contents, .date, .sub_title{
+	font-style: normal;
+	font-weight: bold;
+	font-family: 'NanumSquare_ac';
+}
+.thum_text{
+	color: #C3C3C3;
+	font-size: .5em;
+}
+.thum_title{
+	font-size: .8em;
+}
+.contents{
+	font-size: .8em;
+}
+.date{
+	color: #D4D4D4;
+	font-size: .5em;
+}
+.sub_title{
+	color: #D4D4D4;
+	font-size: .4em;
+}
+.title, .eng{
+	font-family: 'Amatic SC', cursive;
+}
+.lookbook_title{
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+}
+.lookbook{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.5em;
+	position: relative;
+	top: 100px;
+}
+.panel-title{
+	font-family: 'Rajdhani', sans-serif;
+}
+.con_title, .con_title_side{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+.con_title:hover{
+	color: #D4D4D4;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar-default{
+	background-color: white;
+}
+.navbar{
+	font-family: 'Rajdhani', sans-serif;
+}
+.navbar-brand img{
+	height: 21.5px;
+}
+a.navbar-brand{
+	padding-top: 50px;
+}
+.navbar{
+	/*지난번에 navbar의 height를 길게 주기 위해 넣었던 height를 제거하면 collapse가 작동합니다.*/
+	/*height: 110px;*/
+}
+.navbar-right li{
+	padding-top: 60px;
+}
+.nav-padding{
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.navbar-toggle{
+	position: relative;
+	top: 10px;
+}
+/*스마트폰일때의 네브 스타일 수정*/
+@media screen and (max-width: 767px){
+	.navbar{
+		/*지난번에 navbar의 height를 길게 주기 위해 넣었던 height를 제거하면 collapse가 작동합니다.*/
+		/*height:80px;*/
+
+	}
+	.navbar-brand img{
+		position: relative;
+		top: -25px;
+	}
+}
+.navbar-default .navbar-nav>li>a{
+    color: #0f3fee;
+    }
+.navbar-default .navbar-nav>li>a:hover{
+	color: #3C9D00;
+    }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #3C9D00;
+	background-color: white;
+	border-bottom: 1px solid gray;
+}
+/*캐러셀의 위치를 네브 바로 밑으로 수정*/
+#carousel-example-generic{
+	position: relative;
+	top: -17px;
+}
+.carousel-indicators .active{
+	background-color: #EB3900;
+}
+/*캐러셀 안의 그림자 효과 없애기*/
+.carousel-control.right{
+	background-image: none;
+}
+.carousel-control.left{
+	background-image: none;
+}
+.item img{
+	border: 1px solid red;
+	width: 100%;
+	height: 800px;
+}
+
+@media screen and (min-width: 600px;){
+	.glyphicon{
+	position: relative;
+	top: -150% !important;
+	background-color: red;
+	}
+}
+
+
+/*첫번째 컨텐츠인 #icon_contents_01의 아이콘 영역 스타일*/
+#icon_contents_01{
+	padding-top: 40px;
+	background-color: #EFEFF0;
+}
+#icon_contents_01 span{
+	background-color: #FFBC72;
+	width: 95%;
+	height: 260px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	/*border: 1px solid red;*/
+}
+/*아이콘안에 이미지 넣기*/
+#icon_contents_01 .icon_img1{
+	
+	background: url(../img/icon_img1.jpg) no-repeat;
+	background-size: contain;
+	background-position: center
+}
+#icon_contents_01 .icon_img2{
+	
+	background: url(../img/icon_img2.jpg) no-repeat;
+	background-size: contain;
+	background-position: center
+}
+#icon_contents_01 .icon_img3{
+	
+	background: url(../img/icon_img3.gif) no-repeat;
+	background-size: contain;
+	background-position: center
+}
+#icon_contents_01 .icon_img4{
+	
+	background: url(../img/icon_img4.jpg) no-repeat;
+	background-size: contain;
+	background-position: center
+}
+@media (min-width: 1200px) {
+  #icon_contents_01 h4{
+	margin-left: -3%;
+	}
+}
+/*두번째 컨텐츠의 시작 배경이미지*/
+section#accordian_contents_02{
+	background: url(../img/bg1.jpg) no-repeat;
+	height: 600px;
+	background-attachment: fixed;
+	/*background-color: #EFEFF0;*/
+}
+/*두번째 컨텐츠의 시작 배경 텍스트*/
+#accordian_contents_02 h2, #accordian_contents_02 p{
+	color: #FF3412;
+	font-weight: bold;
+}
+#accordian_contents_02 div{
+	position: relative;
+	top: 150px;
+	margin-left: 100px;
+	width: 300px;
+	background-color: white;
+}
+/*두번째 컨텐츠의 위아래 여백*/
+#accordian_contents_02+div.container{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.about-img{
+	margin-top: 50px;
+}
+
+.panel-heading a{
+	text-decoration: none;
+}
+.panel-title a{
+	color: #00732C;
+}
+.panel-body{
+	background-color: #443E1D;
+	color: white;
+}
+
+/*************************************************
+세번째 컨텐츠의 시작 배경 이미지
+*************************************************/
+
+
+section#gallery_contents_03{
+	background: url(../img/pht_ss13_01.jpg) no-repeat;
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center center;
+	/*background-color: #EFEFF0;*/
+	padding: 100px;
+}
+/*두번째 컨텐츠의 시작 배경 텍스트*/
+#gallery_contents_03 h2, #gallery_contents_03 p{
+	color: #FF3412;
+	font-weight: bold;
+}
+#gallery_contents_03 div{
+	position: relative;
+	width: 300px;
+	/*background-color: white;*/
+}
+
+/*세번째 컨텐츠 상하단 여백*/
+#gallery_contents_03+div.container{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+/*네번재 컨텐츠의 시작 배경이미지*/
+section#form_04{
+	background: url(../img/bg3.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	padding : 150px;
+	color: white;
+}
+.wonder{
+	color: #4B4B4B;
+}
+
+html,body{
+	overflow-x: hidden;
+	/*margin-bottom: 100px;*/
+}
+
+
+section#bottom_img{
+	background: url(../img/bg4.jpg);
+	height: 400px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+.space{
+	height: 50px;
+}
+.wp1, .wp2{
+	visibility: hidden;
+}
+.fadeInUp, .fadeInDown{
+	visibility: visible;
+}
+@media screen and (max-width: 767px){
+	.wp1, .wp2{
+	visibility: visible;
+	animation: none !important;
+	}
+}
+.navbar-collapse.in{
+	display: block;
+}

@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+  <style>
+    * {
+      font-family: monospace;
+    }
+
+    body {
+      margin: 40px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+    }
+  </style>
+
+  <noscript>
+    <style>* { color: black; }</style>
+  </noscript>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+
+  <!--3.my css 외부 스타일시트로 넣기 -->
+  <link rel="stylesheet" href="css/mystyle4.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- 45.애니메이트 스크롤 플러그인 연결 -->
+  <script src="js/animatescroll.min.js"></script>
+  <!-- 46.pallax플러그인 연결 -->
+  <script src="js/parallax-plugin.js"></script>
+
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="source/helpers/jquery.fancybox-media.js"></script>
+
+  <link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
+
+  <!-- animate연결 -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- waypoint플러그인 연결 -->
+  <script src="js/jquery.waypoints.js"></script>
+
+  <!-- 22.myscript추가 -->
+  <script src="js/myscript.js"></script>
+
+</head>
+<body>
+  <!-- 전체를 모두 감싸는 .container-fluid 생성 -->
+  <div class="container-fluid" id="top">
+    <!-- 네비게이션바 생성을 위해 사이트의 navbar 코드 가져오기 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid nav-padding">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <img src="img/headlogo.png" alt="">
+          </a><!-- navbar-brand (네비게이션 상단 로고) -->
+        </div><!-- navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a onclick="$('#top').animatescroll();" href="#top">ABOUT</a></li>
+              <li><a onclick="$('#icon_contents_01').animatescroll();" href="#icon_contents_01">NEW ARRIVALS</a></li>
+              <li><a onclick="$('#gallery_contents_03').animatescroll();" href="#gallery_contents_03">ITEM</a></li>
+              <li><a onclick="$('#form_04').animatescroll();" href="#form_04">ONLINE STORE</a></li>
+              <li><a onclick="$('#form_04').animatescroll();" href="#form_05">SHOP INFO.</a></li>
+              <li><a onclick="$('#form_04').animatescroll();" href="#form_06">STOCKIST</a></li>
+              <li><a onclick="$('#form_04').animatescroll();" href="#form_07">INSTAGRAM</a></li>
+              <li><a onclick="$('#form_04').animatescroll();" href="#form_08">NESW</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- container-fluid nav-padding (네브 container-fluid) -->
+    </nav><!-- navbar navbar-default (네브의 시작) -->
+  </div><!-- class="container-fluid" id="top" (전체를 다 감싸는 div) -->
+
+  <!-- 메인화면 상단 캐로셀 -->
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active main_carousel">
+            <img src="img/19saday.jpg" alt="...">
+            <div class="carousel-caption">
+              <!-- 19saday -->
+            </div>
+          </div>
+          <div class="item main_carousel">
+            <img src="img/aday12s.jpg" alt="...">
+            <div class="carousel-caption">
+              <!-- instatop -->
+            </div>
+          </div>
+          <div class="item main_carousel">
+            <img src="img/aday7s.jpg" alt="...">
+            <div class="carousel-caption">
+              <!-- newstop -->
+            </div>
+          </div>
+          <div class="item main_carousel">
+            <img src="img/shoptop.jpg" alt="...">
+            <div class="carousel-caption">
+              <!-- shoptop -->
+            </div>
+          </div>
+        </div><!-- carousel-inner -->
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- carousel-example-generic -->
+    </div><!-- 메인화면 상단 캐로셀 col-sm-12 -->
+  </div><!-- 메인화면 상단 캐로셀 container-fluid -->
+
+
+
+  <script src="js/bundle.js"></script>
+
+  <script>
+    $(function(){
+      $("nav li:nth-child(1)").hover(function(){
+        text("nav li:nth-child(1)");
+      })
+    })
+  </script>
+</body>
+</html>
